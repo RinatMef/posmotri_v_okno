@@ -73,7 +73,7 @@ ol {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: start;
+  justify-content: space-between;
   gap: 40px;
   align-items: end;
 }
@@ -100,15 +100,10 @@ ol {
   letter-spacing: 0em;
   text-align: left;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .content__accent {
-  font-family: Oswald;
-  font-size: 75px;
-  font-weight: 700;
-  line-height: 70px;
-  letter-spacing: 0em;
-  text-align: left;
   color: #545050;
 }
 
@@ -188,7 +183,7 @@ ol {
   font-family: Fira Sans Condensed;
   font-size: 18px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
@@ -218,6 +213,9 @@ ol {
   display: flex;
   outline: none;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .search-form__fieldset {
@@ -255,9 +253,6 @@ ol {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .search-form__textfield::placeholder {
@@ -325,18 +320,11 @@ input[type="checkbox"] + span {
   margin-right: 5px;
 }
 
-.search-form__pseudo-checkbox {
-  position: relative;
-}
-
-input[type="checkbox"]:checked + span::before {
-  content: "";
-  width: 17px;
-  height: 17px;
-  background-color: #fff;
-  /*position: absolute; why not???*/
-  top: 1px;
-  left: 1px;
+input[type="checkbox"]:checked + span {
+  background-image: url(/figma/Rectangle\ 25.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .button {
