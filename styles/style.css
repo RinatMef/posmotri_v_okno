@@ -279,6 +279,7 @@ ol {
 .button:active {
   background-color: #545050;
   outline: none;
+  text-decoration: none;
 }
 
 .button:focus {
